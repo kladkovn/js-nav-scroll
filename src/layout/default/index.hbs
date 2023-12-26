@@ -11,7 +11,7 @@
 			{{title}}
 		</title>
 		<base href="../">
-		<meta charset='utf-8' />
+		<meta charset='utf-8'/>
 
 		{{!-- Підключаємо файл, який нормалізує CSS --}}
 		<link href='css/normalize.css' rel='stylesheet' />
@@ -28,7 +28,7 @@
 		{{!-- Підключаємо файл стилів container --}}
 		<link href='dist/css/container/{{name}}/index.css' rel='stylesheet' />
 		{{!-- Підключаємо файл скриптів container --}}
-		<script src="dist/js/container/{{name}}/index.js"></script>
+		
 
 		{{#each component}}
 			{{!-- Підключаємо файл стилів component --}}
@@ -41,9 +41,11 @@
 
 	<body>
 
-		{{!  ↓  ця кострукція показує куди шаблонізатору треба вставляти код з container файлу   }}
+		{{!  ↓  ця конструкція показує куди шаблонізатору треба вставляти код з container файлу   }}
 		{{{body}}}
 
 	</body>
+
+	<script src="dist/js/container/{{name}}/index.js"></script>
 
 </html>

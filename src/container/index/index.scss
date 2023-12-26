@@ -1,7 +1,12 @@
 @use '../../style' as s;
 
 main {
-	background: s.color(dark);
-	color: s.color(light);
-	padding: s.space(4);
-} 
+	background: s.color(back);
+	color: s.color(black);
+	padding: s.space(10);
+	gap: s.space(5);
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+}

@@ -1,0 +1,66 @@
+@use '../../style' as s;
+
+main {
+	
+	display: flex;
+	
+	justify-content: center;
+	
+
+}
+.scroll{
+	background-color: s.color(grey);
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	
+	gap: s.space(5);
+	padding: s.space(4);
+	max-width: 1320px;
+	width: 100%;
+	&>.first__block{
+		height: 1250px;
+		display: flex;
+		justify-content: center;
+		padding: s.space(2) s.space(5);
+		background-color: s.color(light);
+		&>h1{
+			font-size: 40px;
+			font-weight: bold;
+		}
+	}
+	&>.second__block{
+		height: 1250px;
+		display: flex;
+		justify-content: center;
+		padding: s.space(2) s.space(5);
+		background-color: s.color(dang);
+		&>h1{
+			font-size: 40px;
+			font-weight: bold;
+		}
+	}
+	&>.third__block{
+		height: 1250px;
+		display: flex;
+		justify-content: center;
+		padding: s.space(2) s.space(5);
+		background-color: s.color(back);
+		&>h1{
+			font-size: 40px;
+			font-weight: bold;
+		}
+	}
+}
+button{
+	display: flex;
+	transition: 0.7s;
+	&:hover{
+		opacity: 0.6;
+	}
+
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	display: none;
+}

@@ -12,39 +12,16 @@ const Test = require('../class/test')
 // ↙️ тут вводимо шлях (PATH) до сторінки
 router.get('/', function (req, res) {
   // res.render генерує нам HTML сторінку
-//   class Playlist {
-//     constructor() {
-         
-//         this.tracks = [];
-//     }
-  
-//     addTrack(track) {
-//       this.tracks.push(track);
-//     }
-// }
-  
-// const playlist = new Playlist();
 
-// // const playlistInput = document.querySelector(".playlist-input");
-// // const playlistAddButton = document.querySelector(".playlist-add");
-
-// playlistAddButton.addEventListener("click", () => {
-//     const trackUrl = playlistInput.value;
-//     if (trackUrl.startsWith("http://") || trackUrl.startsWith("https://")) {
-//     playlist.addTrack(trackUrl);
-//     playlistInput.value = "";
-// }
-// console.log(playlist)
-// });
   // ↙️ cюди вводимо назву файлу з сontainer
-  res.render('index', {
+  res.render('scroll', {
     // вказуємо назву контейнера
-    name: 'index',
+    name: 'scroll',
     // вказуємо назву компонентів
-    component: ['heading'],
+    component: [],
 
     // вказуємо назву сторінки
-    title: 'My player with Bard',
+    title: 'scroll',
     // ... сюди можна далі продовжувати додавати потрібні технічні дані, які будуть використовуватися в layout
 
     // вказуємо дані,
